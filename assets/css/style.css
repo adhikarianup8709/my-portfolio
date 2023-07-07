@@ -391,6 +391,7 @@ body.nav-active { overflow: hidden; }
   mask-size: auto;
   -webkit-mask-size: auto;
   height: 560px;
+  object-fit: contain;
 }
 
 .hero .shape {
