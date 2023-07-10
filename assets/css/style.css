@@ -202,12 +202,16 @@ body.nav-active { overflow: hidden; }
   border: 2px solid #817363;
   max-width: max-content;
   padding: 12px 28px;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #fff;
   border-radius: var(--radius-pill);
   transition: var(--transition-1);
   will-change: transform;
 }
 
-.btn:is(:hover, :focus-visible) { transform: translateY(-4px); }
+.btn:is(:hover, :focus-visible) { 
+  transform: translateY(-4px);
+  box-shadow: -6px -6px 12px #c5c5c5, 6px 6px 12px #fff; 
+}
 
 .btn-primary,
 .btn-secondary:is(:hover, :focus-visible) {
