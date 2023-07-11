@@ -183,7 +183,7 @@
             <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
               <a href="#" class="btn btn-primary">See My Works</a>
 
-              <a href="#" class="btn btn-secondary">Contact Me</a>
+              <a href="#" class="btn btn-secondary" id="contactButton">Contact Me</a>
             </div>
 
           </div>
@@ -514,10 +514,10 @@
 
 
       <!-- 
-        - #CONTACT
+        - #CONTACT POPUP
       -->
 
-      <section class="section contact" aria-label="contact" id="contact">
+      <section class="section contact popup" aria-label="contact" id="contact">
         <div class="container">
 
           <div class="contact-card">
@@ -549,9 +549,51 @@
               <button type="submit" class="btn btn-secondary" id="aabtn">Send message</button>
 
             </form>
-
+              <div class="cancel-icon" id="cancelIcon">&#10006;</div> <!-- Add cancel icon -->
           </div>
 
+        </div>
+      </section>
+
+
+            <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" aria-label="contact" id="contactpg">
+        <div class="container">
+
+          <div class="contact-card">
+
+            <div class="contact-content" data-reveal="left">
+
+              <div class="card-icon">
+                <img src="./assets/images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon">
+              </div>
+
+              <h2 class="h2 section-title">If you like what you see, let's work together.</h2>
+
+              <p class="section-text">
+                Feel free to reach out to me for any inquiries, collaborations, or exciting web projects – let's transform your ideas into digital reality!
+              </p>
+
+            </div>
+
+            <form action="" class="contact-form" data-reveal="right">
+
+              <div class="input-wrapper">
+                <input type="text" name="name" id="name" placeholder="Name *" required class="input-field">
+
+                <input type="email" name="email_address" id="email" placeholder="Email *" required class="input-field">
+              </div>
+
+              <textarea name="message" placeholder="Message *" id="message" required class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary" id="aabtn">Send message</button>
+
+            </form>
+          </div>
+          
         </div>
       </section>
 

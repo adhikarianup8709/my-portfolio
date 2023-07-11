@@ -87,7 +87,23 @@ for (let i = 0, len = revealDelayElements.length; i < len; i++) {
 window.addEventListener("scroll", reveal);
 window.addEventListener("load", reveal);
 
+// contact popup
+
+document
+  .getElementById("contactButton")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent the default anchor link behavior
+    var contactSection = document.getElementById("contact");
+    contactSection.style.display = "block";
+  });
+
+document.getElementById("cancelIcon").addEventListener("click", function () {
+  var contactSection = document.getElementById("contact");
+  contactSection.style.display = "none";
+});
+
 //Send email from Javascript
+
 var btn = document.getElementById("aabtn");
 btn.addEventListener("click", function (e) {
   e.preventDefault();
