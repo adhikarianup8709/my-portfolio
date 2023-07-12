@@ -93,12 +93,12 @@ document
   .getElementById("contactButton")
   .addEventListener("click", function (event) {
     event.preventDefault(); // Prevent the default anchor link behavior
-    var contactSection = document.getElementById("contact");
+    var contactSection = document.getElementById("contactpopup");
     contactSection.style.display = "block";
   });
 
 document.getElementById("cancelIcon").addEventListener("click", function () {
-  var contactSection = document.getElementById("contact");
+  var contactSection = document.getElementById("contactpopup");
   contactSection.style.display = "none";
 });
 
